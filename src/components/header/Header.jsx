@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { BsPlayCircleFill } from "react-icons/bs";
@@ -6,16 +7,22 @@ import {
   TbPlayerTrackNextFilled,
 } from "react-icons/tb";
 import SocialMedia from "../SocialMedia/SocialMedia";
-
+import { useTheme } from "next-themes";
 const Header = () => {
+  const { theme } = useTheme();
+  const currentTheme = theme;
+
+  console.log("curr", currentTheme);
   return (
     <>
       <>
-        <div className="relative flex flex-col justify-center items-center  font-Pacifico dark:bg-slate-800 ">
-          <div className="flex flex-col  p-14 bg-white rounded-xl shadow-blue-800 shadow-2xl gap-8">
+        <div className="relative flex flex-col justify-center items-center p-28 font-Pacifico ">
+          <div className=" flex flex-col  p-14 bg-white dark:bg-[#444352] rounded-xl shadow-blue-800 shadow-2xl gap-8">
             <div className="flex flex-col  w-auto justify-center items-center gap-3">
-              <label>Song Name</label>
-              <label>Artist name</label>
+              <label className="dark:text-[#FCB514] text-2xl">Song Name</label>
+              <label className="dark:text-[#FCB514] text-2xl">
+                Artist name
+              </label>
             </div>
             <div>
               <div className="relative w-52 h-52 ">
@@ -23,19 +30,19 @@ const Header = () => {
                   src="/musicappimg.jpg"
                   fill
                   alt={"Np Image Found"}
-                  className="rounded-full"
+                  className="rounded-full animate-spin-slow bg-cover"
                 />
               </div>
             </div>
             <div className="flex justify-center items-center gap-5">
               <button>
-                <TbPlayerTrackPrevFilled className="text-4xl" />
+                <TbPlayerTrackPrevFilled className="text-4xl dark:text-[#FCB514]" />
               </button>
               <button>
-                <BsPlayCircleFill className="text-4xl" />
+                <BsPlayCircleFill className="text-4xl dark:text-[#FCB514]" />
               </button>
               <button>
-                <TbPlayerTrackNextFilled className="text-4xl" />
+                <TbPlayerTrackNextFilled className="text-4xl dark:text-[#FCB514]" />
               </button>
             </div>
           </div>

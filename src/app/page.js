@@ -1,14 +1,10 @@
-import Navbar from '@/components/Navbar/Navbar'
-import SocialMedia from '@/components/SocialMedia/SocialMedia'
-import Header from '@/components/header/Header'
-import Image from 'next/image'
+import Navbar from "@/components/Navbar/Navbar";
+import Header from "@/components/header/Header";
 
 export default function Home() {
   return (
-   <>
-   <Navbar/>
-   <Header/>
-   {/* <SocialMedia/> */}
-   </>
-  )
+    <>
+      <Header />
+    </>
+  );
 }
