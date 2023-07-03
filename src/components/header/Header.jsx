@@ -7,12 +7,13 @@ import {
   TbPlayerTrackNextFilled,
 } from "react-icons/tb";
 import SocialMedia from "../SocialMedia/SocialMedia";
-import { useTheme } from "next-themes";
-const Header = () => {
-  const { theme } = useTheme();
-  const currentTheme = theme;
 
-  console.log("curr", currentTheme);
+const Header = () => {
+  const [audioProgress, setAudioProgress] = useState(0);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const [musicIndex, setMusicIndex] = useState(0);
+  const [musicTotalLength, setMusicTotalLength] = useState('04 : 38');
+  const [musicCurrentTime, setMusicCurrentTime] = useState('00 : 00');
   return (
     <>
       <>
