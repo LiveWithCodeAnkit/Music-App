@@ -9,9 +9,9 @@ export const useMusic = () => {
   const [musicCurrentTime, setMusicCurrentTime] = useState("00 : 00");
   const [audioProgress, setAudioProgress] = useState(0);
 
-  // useEffect(() => {
-  //   setIsPlaying(!isPlaying);
-  // });
+  useEffect(() => {
+    setIsPlaying(!isPlaying);
+  },[]);
 
   const currentAudio = useRef();
   const handleMusicProgressBar = (e) => {
