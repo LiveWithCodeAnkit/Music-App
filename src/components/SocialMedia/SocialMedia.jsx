@@ -6,7 +6,7 @@ import { FaGithubAlt } from "react-icons/fa";
 const SocialMedia = () => {
   return (
     <>
-      <div className="flex flex-col gap-5 justify-center items-start p-5">
+      <div className="flex flex-col  justify-center items-start p-2">
         <Link
           href="/"
           className="flex justify-center items-center text-red-600 text-xl gap-2 animate-bounce "

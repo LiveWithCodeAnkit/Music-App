@@ -1,9 +1,13 @@
 "use client";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Pacifico } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+const pacifico = Pacifico({
+  weight: "400",
+  subsets: ["cyrillic"],
+  display: "auto",
+});
 
 // export const metadata = {
 //   title: "Create Next App",
@@ -13,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={pacifico.className}>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
