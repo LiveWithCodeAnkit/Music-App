@@ -10,10 +10,8 @@ This is a music app developed using Next.js 13, JavaScript, and Tailwind CSS. It
 - Track Listing: Display a list of music tracks with their corresponding information such as title, artist, and duration.
 - Progress Bar: Show the progress of the currently playing track with a visual progress bar.
 - Volume Control: Allow users to adjust the volume level of the music player.
-- Shuffle: Provide an option to shuffle the playlist for a random playback order.
-- Repeat: Allow users to repeat the current track or the entire playlist.
-- Playlist Management: Enable users to create, edit, and delete playlists.
-- Search: Implement a search functionality to find specific tracks or artists.
+
+
 
 ## Technologies Used
 
