@@ -41,10 +41,10 @@ const Header = () => {
         >
           <div className=" flex flex-col  p-14 bg-white dark:bg-[#444352] rounded-xl shadow-blue-800 shadow-2xl gap-8">
             <div className="flex flex-col  w-auto justify-center items-center gap-3">
-              <label className="dark:text-[#FCB514] text-xl">
+              <label className="dark:text-[#FCB514] text-2xl">
                 {musicAPI[currentTrackIndex].songName}
               </label>
-              <label className="dark:text-[#FCB514] text-2xl">
+              <label className="dark:text-[#FCB514] text-xl">
                 {musicAPI[currentTrackIndex].songArtist}
               </label>
             </div>
