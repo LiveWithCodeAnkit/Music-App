@@ -21,7 +21,7 @@ export const musicAPI = [
     songName: "Catch ME",
     songArtist: "	Anirudh Ravichander",
     songSrc: "/static/songs/song4.mp3",
-    songAvatar: "/static/images/song4.jpeg",
+    songAvatar: "/static/images/song4.jpg",
   },
 ];
 
